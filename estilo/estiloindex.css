@@ -100,12 +100,6 @@ span {
     width: 30px;
     padding-top: 15px;
     margin: 10px;
-    
-
-
-
-
-
 }
 
 }
@@ -114,8 +108,106 @@ span {
 /*--------------------------------------------------------------------*/
 @media screen and (min-width: 993px) {
 
+/*variávies*/
+:root {
+    --font-color1: #fff2e7;
+    --font-color2:#ecd6c4;
+    --font-color3:#ffffff;
+
+    --font-family1: 'sarala';
+    --font-family2: 'Righteous';
+}
+
+/*Configurações blobais*/    
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
-    background-color: grey;
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #534A5B 40.62%, #9EF365   85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+   }
+   
+   .menu-imagem {
+       height: 150px;
+       margin-left: -20vw;
+   
+   }
+   
+   nav {
+       display: flex;
+       gap: 32px;
+   
+   }
+   
+   .menu-item {
+       font-family: var(--font-family1);
+       color: var(--font-color3);
+       font-weight: 400px;
+       font-size: 25px; 
+   }
+
+main {
+    border-top: 3px solid var(--font-color1);
+    padding-bottom: 40px;
+}
+
+.corpo-pagina {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo1, .titulo2 {
+    font-family: var(--font-family2);
+    color: var(--font-color3);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+
+.titulo2 {
+    font-size: 20px;
+    color: var(--font-color1);
+}
+
+.texto {
+    font-family: var(--font-family1);
+    font-weight: 300px;
+    font-size: 18px;
+    color: var(--font-color2);
+    text-indent: 30px;
+    text-align: justify;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+span {
+    font-weight: bold;
+    color: var(--font-family2);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    border-top: 3px solid var(--font-color1);
+}
+
+.imagem-rodape {
+    width: 30px;
+    padding-top: 15px;
+    margin: 10px;
 }
 
 }
